@@ -55,28 +55,22 @@ $text-muted_hover: var(--oc-{{ site.data.skin.text-muted.hover | default: 'gray-
 @import "overrides/leaflet";
 @import "custom";
 
-/* ===== Custom academic navbar (FINAL) ===== */
-
 .custom-navbar {
   background: #ffffff;
-  border-bottom: 1px solid #000000;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+  padding: 1rem 2rem;  
 }
 
 .custom-navbar .navbar-nav {
   display: flex;
-  gap: 1.5rem;
-  margin-left: 0 !important;     
-  margin-right: auto !important; 
-  justify-content: flex-start;
+  justify-content: flex-start; /* 左 */
+  gap: 2rem;
 }
 
 .custom-navbar .nav-link {
   color: #a020f0;
   font-weight: 500;
-  padding: 0.5rem 0;
-  line-height: 1.4;
+  padding: 0.25rem 0;
 }
 
 .custom-navbar .nav-link:hover {

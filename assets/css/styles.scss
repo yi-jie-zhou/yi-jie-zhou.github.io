@@ -54,16 +54,15 @@ $text-muted_hover: var(--oc-{{ site.data.skin.text-muted.hover | default: 'gray-
 @import "overrides/bootstrap";
 @import "overrides/leaflet";
 @import "custom";
-
 .custom-navbar {
   background: #ffffff;
   border-bottom: 1px solid #000;
-  padding: 1rem 2rem;  
+  padding: 1rem 2rem;
 }
 
 .custom-navbar .navbar-nav {
   display: flex;
-  justify-content: flex-start; /* 左 */
+  justify-content: flex-start;
   gap: 2rem;
 }
 
@@ -76,4 +75,14 @@ $text-muted_hover: var(--oc-{{ site.data.skin.text-muted.hover | default: 'gray-
 .custom-navbar .nav-link:hover {
   color: #6a0dad;
   text-decoration: none;
+}
+
+/* ===== Main content centering ===== */
+
+main > .container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4rem;    
+  padding-right: 4rem;   
 }

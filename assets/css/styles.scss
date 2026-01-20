@@ -55,7 +55,8 @@ $text-muted_hover: var(--oc-{{ site.data.skin.text-muted.hover | default: 'gray-
 @import "overrides/leaflet";
 @import "custom";
 
-/* ===== Custom academic navbar ===== */
+/* ===== Custom academic navbar (FINAL) ===== */
+
 .custom-navbar {
   background: #ffffff;
   border-bottom: 1px solid #000000;
@@ -65,8 +66,10 @@ $text-muted_hover: var(--oc-{{ site.data.skin.text-muted.hover | default: 'gray-
 
 .custom-navbar .navbar-nav {
   display: flex;
-  justify-content: flex-start;  
   gap: 1.5rem;
+  margin-left: 0 !important;     
+  margin-right: auto !important; 
+  justify-content: flex-start;
 }
 
 .custom-navbar .nav-link {

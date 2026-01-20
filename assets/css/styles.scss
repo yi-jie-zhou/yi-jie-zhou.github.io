@@ -85,4 +85,26 @@ $text-muted_hover: var(--oc-{{ site.data.skin.text-muted.hover | default: 'gray-
   text-decoration: none; 
 }
 
+/* ===== Academic serif typography ===== */
+
+/* 标题：名字 */
+h1, .display-3 {
+  font-family: "EB Garamond", "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* 副标题：PhD student */
+.lead {
+  font-family: "EB Garamond", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+/* 正文文字 */
+main {
+  font-family: "EB Garamond", "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
 

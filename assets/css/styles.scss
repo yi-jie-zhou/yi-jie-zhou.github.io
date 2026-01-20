@@ -60,14 +60,19 @@ $text-muted_hover: var(--oc-{{ site.data.skin.text-muted.hover | default: 'gray-
   background: #ffffff; 
   border-bottom: 1px solid #000; 
   padding: 1rem 2rem; 
-} 
+}
 
-/* ✅ 导航栏里的内容：居中（你刚才问的就是这一步） */
+/* 🔥 关键：先控制 navbar 本身 */
+.custom-navbar .navbar {
+  display: flex;
+  justify-content: center;   /* ← 真正让“导航栏里的内容”居中 */
+}
+
+/* 再控制文字之间的间距 */
 .custom-navbar .navbar-nav { 
   display: flex; 
-  justify-content: center;   /* ← 这里从 flex-start 改成 center */
   gap: 2rem; 
-} 
+}
 
 .custom-navbar .nav-link { 
   color: #a020f0; 
@@ -78,16 +83,6 @@ $text-muted_hover: var(--oc-{{ site.data.skin.text-muted.hover | default: 'gray-
 .custom-navbar .nav-link:hover { 
   color: #6a0dad; 
   text-decoration: none; 
-} 
-
-/* ===== Main content centering ===== */
-/* ⚠️ 修正选择器：main > .container 原来匹配不到 */
-
-main .container { 
-  max-width: 960px; 
-  margin-left: auto; 
-  margin-right: auto; 
-  padding-left: 4rem;     
-  padding-right: 4rem;    
 }
+
 

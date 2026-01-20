@@ -65,7 +65,7 @@ $text-muted_hover: var(--oc-{{ site.data.skin.text-muted.hover | default: 'gray-
 /* 🔥 关键：先控制 navbar 本身 */
 .custom-navbar .navbar {
   display: flex;
-  justify-content: center;   /* ← 真正让“导航栏里的内容”居中 */
+  justify-content: right;   /* ← 真正让“导航栏里的内容”居中 */
 }
 
 /* 再控制文字之间的间距 */

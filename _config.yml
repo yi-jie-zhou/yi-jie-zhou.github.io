@@ -1,10 +1,12 @@
 title: Nagymaros
 description: Jekyll theme for a conference website
-baseurl: /jekyll-nagymaros
-url: https://piazzai.github.io
+baseurl: ""
+url: https://yi-jie-zhou.github.io
 
 permalink: pretty
-theme: jekyll-nagymaros
+
+include:
+  - assets
 
 home: /
 copyright: Place Holder
@@ -20,6 +22,4 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-sass:
-  sourcemap: never
   

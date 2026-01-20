@@ -56,55 +56,43 @@ $text-muted_hover: var(--oc-{{ site.data.skin.text-muted.hover | default: 'gray-
 @import "custom";
 
 
+/* navbar */
 .custom-navbar { 
   background: #ffffff; 
   border-bottom: 1px solid #000; 
   padding: 1rem 2rem; 
 }
 
-/* 🔥 关键：先控制 navbar 本身 */
 .custom-navbar .navbar {
   display: flex;
-  justify-content: right;   /* ← 真正让“导航栏里的内容”居中 */
+  justify-content: center;   /* 或 flex-end */
 }
 
-/* 再控制文字之间的间距 */
 .custom-navbar .navbar-nav { 
   display: flex; 
   gap: 2rem; 
 }
 
-.custom-navbar .nav-link { 
-  color: #a020f0; 
-  font-weight: 500; 
-  padding: 0.25rem 0; 
-} 
-
-.custom-navbar .nav-link:hover { 
-  color: #6a0dad; 
-  text-decoration: none; 
-}
-
-/* ===== Academic serif typography ===== */
-
-/* 标题：名字 */
+/* typography */
 h1, .display-3 {
   font-family: "EB Garamond", "Times New Roman", serif;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
 
-/* 副标题：PhD student */
 .lead {
   font-family: "EB Garamond", "Times New Roman", serif;
-  font-weight: 400;
   font-size: 1.25rem;
 }
 
-/* 正文文字 */
 main {
   font-family: "EB Garamond", "Times New Roman", serif;
   font-size: 1.05rem;
   line-height: 1.7;
+}
+
+/* image */
+.profile-photo {
+  margin-top: 3.5rem;
 }
 

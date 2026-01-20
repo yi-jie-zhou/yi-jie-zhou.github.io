@@ -54,3 +54,27 @@ $text-muted_hover: var(--oc-{{ site.data.skin.text-muted.hover | default: 'gray-
 @import "overrides/bootstrap";
 @import "overrides/leaflet";
 @import "custom";
+
+/* ===== Custom academic navbar ===== */
+
+.custom-navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #000000; /* 黑线 */
+}
+
+.custom-navbar .navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.custom-navbar .nav-link {
+  color: #a020f0;          /* 紫色 */
+  font-weight: 500;
+  padding: 0.75rem 0;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #6a0dad;          /* 深一点的紫 */
+  text-decoration: none;
+}
+
